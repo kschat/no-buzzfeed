@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "No BuzzFeed",
+  "description": "Removes BuzzFeed posts from Facebook",
+  "version": "0.0.1",
+  "author": "Kyle Schattler",
+  "content_scripts": [{
+    "matches": ["*://*.facebook.com/*"],
+    "js": ["app.js"]
+  }]
+}
