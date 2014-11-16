@@ -20,7 +20,7 @@
 
             log('removing node: %s', node.id || node.className);
 
-            return node ? node.remove() : null;
+            return node && node.remove();
           });
       }
     , postObserver = new MutationObserver(function(muts) {
